@@ -36,12 +36,14 @@
         }
     },
     "item": {
-        "prototype": "montage/ui/text.reel",
-        "properties": {
-            "element": { "#": "item" },
-            "value": "I am a list item."
-        }
+    "prototype": "montage/ui/text.reel",
+    "properties": {
+        "element": { "#": "item" },
+    },
+    "bindings": {
+        "value": {"<-": "@rep.objectAtCurrentIteration"}
     }
+}
 }
     </script>
 </head>

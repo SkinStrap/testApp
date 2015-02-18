@@ -23,10 +23,26 @@
     <script src="node_modules/montage/montage.js"></script>
     <script type="text/montage-serialization">
     {
-        "owner": {
-            "prototype": "montage/ui/loader.reel"
+    "owner": {
+        "properties": {
+            "element": {"#": "component"}
+        }
+    },
+    "rep": {
+        "prototype": "montage/ui/repetition.reel",
+        "properties": {
+            "element": { "#": "items" },
+            "content": [ 1, 2, 3, 4, 5 ]
+        }
+    },
+    "item": {
+        "prototype": "montage/ui/text.reel",
+        "properties": {
+            "element": { "#": "item" },
+            "value": "I am a list item."
         }
     }
+}
     </script>
 </head>
 <body>
